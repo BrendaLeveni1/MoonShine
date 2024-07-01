@@ -10,20 +10,20 @@
     </thead>
     <tbody>
        @for (velas of velas; track velas.name) {
-           <tr>
+           <tr [ngClass]="{'clearance': velas.clearance}">
            <td><img [src]="velas.image" [alt]="velas.name"></td>
              <td>{{ velas.name }}</td>
              <td>{{ velas.material }}</td>
-             <td>{{ velas.price }}</td>
+             <td>{{ velas.price | currency }}</td>
              @if (velas.stock >0) {
                <td>{{ velas.stock }}</td>
              } @else {
-               <td>SIN STOCK</td>
+               <td><span class="badge text-bg-danger">SIN STOCK</span></td>
              }
            </tr>
          } @empty {
            <tr>
-             <td colspan="4">No hay velas para mostrar.</td>
+             <td colspan="4">hay velas para mostrar.</td>
            </tr>
          }
    </tbody>

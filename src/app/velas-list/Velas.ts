@@ -4,5 +4,6 @@ export interface Velas{
     price: number;
     stock: number;
     image: string;
+    clearance: boolean;
   }
   

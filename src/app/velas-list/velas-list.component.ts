@@ -13,21 +13,24 @@ export class VelasListComponent {
     material: 'Cera de soja',
     price: 5000,
     stock: 4,
-    image: 'assets/img/frutosRojos.jpeg'
+    image: 'assets/img/frutosRojos.jpeg',
+    clearance: false,
  },
  {
   name: 'Lima Verbena',
   material: 'Cera de soja',
   price: 5000,
   stock: 4,
-  image: 'assets/img/limaVerbena.jpeg'
+  image: 'assets/img/limaVerbena.jpeg',
+  clearance: true,
 },
 {
   name: 'Uva Mango',
   material: 'Cera de soja',
   price: 5000,
-  stock :4,
-  image: 'assets/img/UvaMango.jpeg'
+  stock : 0,
+  image: 'assets/img/UvaMango.jpeg',
+  clearance: false,
 }
 ]
 }

@@ -1,16 +1,18 @@
-table {
+table{
     width: 100%;
     border-collapse: collapse;
+    background-color: pink;
+
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #f8efd3;
     padding: 8px;
     text-align: center;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #f0ddb4;
 }
 
 img {
@@ -23,3 +25,8 @@ img {
         width: 100px; /* Tamaño ajustado para pantallas pequeñas */
     }
 }
+.clearance{
+   border: 2px solid; 
+    color: violet;
+}
+
