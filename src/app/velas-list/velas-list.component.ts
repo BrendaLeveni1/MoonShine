@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Velas } from './Velas';
 
 @Component({
   selector: 'app-velas-list',
@@ -6,26 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './velas-list.component.scss'
 })
 export class VelasListComponent {
- velas ={
-   "name": "Frutos Rojos",
-   "material": "Cera de soja",
-   "price": "5000",
-   "stock":"4",
-   "image": "assets/img/frutosRojos.jpeg"
- }
- velas1 ={
-  "name": "Lima Verbena",
-  "material": "Cera de soja",
-  "price": "5000",
-  "stock":"4",
-  "image": "assets/img/limaVerbena.jpeg"
+ velas : Velas[] = [
+  {
+    name: 'Frutos Rojos',
+    material: 'Cera de soja',
+    price: 5000,
+    stock: 4,
+    image: 'assets/img/frutosRojos.jpeg'
+ },
+ {
+  name: 'Lima Verbena',
+  material: 'Cera de soja',
+  price: 5000,
+  stock: 4,
+  image: 'assets/img/limaVerbena.jpeg'
+},
+{
+  name: 'Uva Mango',
+  material: 'Cera de soja',
+  price: 5000,
+  stock :4,
+  image: 'assets/img/UvaMango.jpeg'
 }
-velas2 ={
-  "name": "Uva Mango",
-  "material": "Cera de soja",
-  "price": "5000",
-  "stock":"4",
-  "image": "assets/img/UvaMango.jpeg"
-}
-
+]
 }
