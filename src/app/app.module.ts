@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VelasListComponent } from './velas-list/velas-list.component';
 import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
+import { VelasAboutComponent } from './velas-about/velas-about.component';
+import { VelasMoonshineComponent } from './velas-moonshine/velas-moonshine.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VelasListComponent,
-    CarritoComprasComponent
+    CarritoComprasComponent,
+    VelasAboutComponent,
+    VelasMoonshineComponent
   ],
   imports: [
     BrowserModule,
