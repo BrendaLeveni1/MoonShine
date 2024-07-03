@@ -8,6 +8,7 @@ import { VelasListComponent } from './velas-list/velas-list.component';
 import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
 import { VelasAboutComponent } from './velas-about/velas-about.component';
 import { VelasMoonshineComponent } from './velas-moonshine/velas-moonshine.component';
+import { InputNumberComponent } from './input-number/input-number.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { VelasMoonshineComponent } from './velas-moonshine/velas-moonshine.compo
     VelasListComponent,
     CarritoComprasComponent,
     VelasAboutComponent,
-    VelasMoonshineComponent
+    VelasMoonshineComponent,
+    InputNumberComponent
   ],
   imports: [
     BrowserModule,

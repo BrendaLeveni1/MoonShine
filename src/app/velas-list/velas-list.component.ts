@@ -37,38 +37,7 @@ export class VelasListComponent {
 }
 ]
 
-upQuantity(velas : Velas) {
-  if(velas.quantity <velas.stock){
 
-    velas.quantity++;
-  }
-}
-dowQuantity(velas : Velas) {
-  if(velas.quantity >0){
-
-    velas.quantity--;
-  }
-}
-
-onChangeQuantity(event: any, velas: Velas): void {
-  const input = event.target as HTMLInputElement;
-  let value = parseInt(input.value, 10);
-
-  // Prevent non-numeric input
-  if (isNaN(value)) {
-    input.value = velas.quantity.toString();
-    return;
-  }
-
-  // Prevent exceeding stock
-  if (value > velas.stock) {
-    input.value = velas.stock.toString();
-    value = velas.stock;
-  }
-
-  // Update quantity
-  velas.quantity = value;
-}
 }
 
 
