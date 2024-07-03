@@ -1,7 +1,7 @@
 table{
     width: 100%;
     border-collapse: collapse;
-    background-color: pink;
+ 
 
 }
 
@@ -13,17 +13,6 @@ th, td {
 
 th {
     background-color: #f0ddb4;
-}
-
-img {
-    width: 150px; /* Puedes ajustar este tamaño */
-    height: auto;
-}
-
-@media (max-width: 600px) {
-    img {
-        width: 100px; /* Tamaño ajustado para pantallas pequeñas */
-    }
 }
 .clearance{
    border: 2px solid; 

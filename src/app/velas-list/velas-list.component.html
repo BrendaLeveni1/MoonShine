@@ -6,12 +6,13 @@
             <th>Material</th>
             <th>Precio</th>
             <th>Stock</th>
+            <th>Compra</th>
         </tr>
     </thead>
     <tbody>
        @for (velas of velas; track velas.name) {
            <tr [ngClass]="{'clearance': velas.clearance}">
-           <td><img [src]="velas.image" [alt]="velas.name"></td>
+           <td><img width="100" class="img-thumbnail" [src]="velas.image" [alt]="velas.name"></td>
              <td>{{ velas.name }}</td>
              <td>{{ velas.material }}</td>
              <td>{{ velas.price | currency }}</td>
@@ -20,10 +21,15 @@
              } @else {
                <td><span class="badge text-bg-danger">SIN STOCK</span></td>
              }
+             <td>
+              <button class="btn btn-dark btn-sm" (click)="dowQuantity(velas)">-</button>
+              <input type="number" [(ngModel)]="velas.quantity" (keyup)="onChangeQuantity($event, velas)">
+              
+              <button class="btn btn-dark btn-sm"(click)="upQuantity(velas)">+</button></td>
            </tr>
          } @empty {
            <tr>
-             <td colspan="4">hay velas para mostrar.</td>
+             <td colspan="4">No hay velas para mostrar.</td>
            </tr>
          }
    </tbody>
