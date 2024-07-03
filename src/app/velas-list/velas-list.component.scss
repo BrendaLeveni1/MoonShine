@@ -9,13 +9,17 @@ th, td {
     border: 1px solid #f8efd3;
     padding: 8px;
     text-align: center;
+    vertical-align: middle;
 }
 
 th {
     background-color: #f0ddb4;
 }
 .clearance{
-   border: 2px solid; 
+   border: 2px solid pink; 
     color: violet;
+}
+input{
+    max-width: 30px;
 }
 

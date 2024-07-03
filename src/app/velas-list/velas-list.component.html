@@ -22,10 +22,16 @@
                <td><span class="badge text-bg-danger">SIN STOCK</span></td>
              }
              <td>
-              <button class="btn btn-dark btn-sm" (click)="dowQuantity(velas)">-</button>
-              <input type="number" [(ngModel)]="velas.quantity" (keyup)="onChangeQuantity($event, velas)">
-              
-              <button class="btn btn-dark btn-sm"(click)="upQuantity(velas)">+</button></td>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-dark btn-sm" (click)="dowQuantity(velas)">-</button>
+                </div>
+                <input type="number" [(ngModel)]="velas.quantity" (keyup)="onChangeQuantity($event, velas)">
+                <div class="input-group-append">
+                  <button class="btn btn-dark btn-sm"(click)="upQuantity(velas)">+</button>
+                </div>
+              </div>
+            </td>
            </tr>
          } @empty {
            <tr>
