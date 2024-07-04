@@ -19,20 +19,20 @@
 }
 
 .btn-pink {
-  background-color: #e9b3ddc0;; /* Color rosa para el botón */
+  background-color:rgb(252, 195, 157); /* Color rosa para el botón */
   border: none;
 }
 
 .btn-pink:hover {
-  background-color: #ebb5d2; /* Color rosa más oscuro para el hover */
+  background-color:rgb(235, 178, 141); /* Color rosa más oscuro para el hover */
 }
 
 .form-control:focus {
-  border-color: #f1a4cb; /* Color rosa para el borde del input */
-  box-shadow: 0 0 5px rgba(241, 153, 197, 0.925); /* Sombra rosa alrededor del input */
+  border-color:  #f0ddb4; /* Color rosa para el borde del input */
+  box-shadow: 0 0 5px rgb(235, 178, 141); /* Sombra rosa alrededor del input */
 }
 
    .form-container:hover {
      transform: translateY(-10px);
-     box-shadow: 0 15px 30px rgba(241, 183, 227, 0.678);
+     box-shadow: 0 15px 30px rgb(235, 178, 141);
    }
