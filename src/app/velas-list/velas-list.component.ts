@@ -45,6 +45,8 @@ export class VelasListComponent {
 ]
  addToCart (velas: any): void {
   this.cart.addToCart(velas);
+  velas.stock -= velas.quantity;
+  velas.quantity =0;
  }
 
    
