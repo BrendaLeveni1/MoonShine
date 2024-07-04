@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Velas } from './velas-list/Velas';
+import { Velas } from '../velas-list/Velas';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({

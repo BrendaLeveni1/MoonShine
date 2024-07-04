@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { VelasCartService } from '../velas-cart.service';
+import { VelasCartService } from '../services/velas-cart.service';
 import { Observable, observable } from 'rxjs';
 import { Velas } from '../velas-list/Velas';
 

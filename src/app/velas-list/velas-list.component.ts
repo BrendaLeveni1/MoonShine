@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Velas } from './Velas';
-import { VelasCartService } from '../velas-cart.service';
+import { VelasCartService } from '../services/velas-cart.service';
+import { VelasDataService } from '../services/velas-data.service';
 
 @Component({
   selector: 'app-velas-list',
@@ -9,7 +10,7 @@ import { VelasCartService } from '../velas-cart.service';
 })
 export class VelasListComponent {
 
- constructor(private cart : VelasCartService){
+ constructor(private cart : VelasCartService , private velasDataService:VelasDataService){
   
  }
 
