@@ -7,4 +7,3 @@ export interface Velas{
     clearance: boolean;
     quantity : number;
   }
-  

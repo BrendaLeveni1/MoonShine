@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Velas } from './Velas';
 import { VelasCartService } from '../services/velas-cart.service';
 import { VelasDataService } from '../services/velas-data.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-velas-list',
@@ -9,14 +10,25 @@ import { VelasDataService } from '../services/velas-data.service';
   styleUrl: './velas-list.component.scss'
 })
 export class VelasListComponent {
+  private subscription: Subscription | undefined;
 
- constructor(private cart : VelasCartService , private velasDataService:VelasDataService){
+  constructor(private cart : VelasCartService , private velasDataService:VelasDataService){
+    
+  }
   
- }
-
-
- velas : Velas[] = [
-  {
+  ngOninit(){
+    this.subscription = this.velasDataService.getAll()
+  .subscribe(velas  => this.velas = velas );
+  }
+  
+  ngOnDestroy(): void {
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
+  }
+  
+  velas : Velas[] = [
+    {// sacar esto cuando pueda consumir la api
     name: 'Frutos Rojos',
     material: 'Cera de soja',
     price: 5000,
