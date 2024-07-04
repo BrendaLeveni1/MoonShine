@@ -1,9 +1,19 @@
-<h3>Carrito de compras</h3>
-<ul>
-    <li *ngFor="let v of shoopList">
-        {{v.name}} :{{v.quantity}}
-    </li>
-</ul>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Nombre del producto</th>
+        <th>Cantidad</th>
+        <th>Precio por unidad</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let v of shoopList$ | async">
+            <td>{{v.name}} :</td> 
+            <td> {{v.quantity}}</td>
+            <td> {{v.price | currency}}</td>
+            <!-- <app-input-number [(ngModel)]="velas.quantity" (keyup)="onQuantityChange($event, velas)"></app-input-number>
+        --> </tr>
 
-
+    </tbody>
+</table>
 

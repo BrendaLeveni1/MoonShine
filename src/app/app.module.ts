@@ -9,6 +9,7 @@ import { CarritoComprasComponent } from './carrito-compras/carrito-compras.compo
 import { VelasAboutComponent } from './velas-about/velas-about.component';
 import { VelasMoonshineComponent } from './velas-moonshine/velas-moonshine.component';
 import { InputNumberComponent } from './input-number/input-number.component';
+import { VelasContactoComponent } from './velas-contacto/velas-contacto.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { InputNumberComponent } from './input-number/input-number.component';
     CarritoComprasComponent,
     VelasAboutComponent,
     VelasMoonshineComponent,
-    InputNumberComponent
+    InputNumberComponent,
+    VelasContactoComponent
   ],
   imports: [
     BrowserModule,

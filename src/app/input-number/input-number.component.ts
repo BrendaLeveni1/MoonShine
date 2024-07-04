@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Velas } from '../velas-list/Velas';
+
 
 @Component({
   selector: 'app-input-number',
@@ -20,11 +20,9 @@ export class InputNumberComponent implements OnInit{
   }
   upQuantity() {
     if(this.quantity <this.max){
-  
       this.quantity++;
       this.quantityChange.emit(this.quantity);
     }
-    
   }
   dowQuantity() {
     if(this.quantity >0){
