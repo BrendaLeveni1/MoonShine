@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+     background-color:rgb(223, 185, 154);
+}
+
+header {
+    background: #f1e8c8;
+    color: rgb(158, 128, 103);
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+section {
+    padding: 1em 2em;
+    margin: 1em auto;
+    background: white;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color:rgb(158, 128, 103);;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+li strong {
+    color: rgb(158, 128, 103);;
+}
+
+.intro p, .why-choose p {
+    margin: 0.5em 0;
+}
+
+.carousel-item img {
+  height: 500px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover; /* Para que la imagen cubra el contenedor */
+}

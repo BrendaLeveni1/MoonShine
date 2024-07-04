@@ -23,7 +23,7 @@
                <td><span class="badge text-bg-danger">SIN STOCK</span></td>
              }
              <td>
-             <app-input-number [velas]="velas" *ngIf="velas.stock"></app-input-number>
+            <app-input-number  [(quantity)]="velas.quantity"[max]="velas.stock" *ngIf="velas.stock" ></app-input-number>
             </td>
            </tr>
          } @empty {
