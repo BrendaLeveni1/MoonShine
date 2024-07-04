@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Velas } from './Velas';
+import { VelasCartService } from '../velas-cart.service';
 
 @Component({
   selector: 'app-velas-list',
@@ -7,6 +8,12 @@ import { Velas } from './Velas';
   styleUrl: './velas-list.component.scss'
 })
 export class VelasListComponent {
+
+ constructor(private cart : VelasCartService){
+  
+ }
+
+
  velas : Velas[] = [
   {
     name: 'Frutos Rojos',
@@ -36,7 +43,9 @@ export class VelasListComponent {
   quantity : 0,
 }
 ]
-
+ addToCart (velas: any): void {
+  this.cart.addToCart(velas);
+ }
 
    
 

@@ -24,6 +24,7 @@
              }
              <td>
             <app-input-number  [(quantity)]="velas.quantity"[max]="velas.stock" *ngIf="velas.stock" ></app-input-number>
+            <button class="btn btn-dark" (click)="addToCart(velas)" [disabled]="velas.stock <= 0">Agregar al carrito</button>
             </td>
            </tr>
          } @empty {
