@@ -3,16 +3,28 @@ table{
     border-collapse: collapse;
 
 }
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #8B4513;
+    text-align: center;
+}
 
 th, td {
-    border: 1px solid #f8efd3;
+   
     padding: 8px;
     text-align: center;
     vertical-align: middle;
+    border-color:rgb(223, 185, 154);
 }
 
 th {
-    background-color: #f0ddb4;
+  color: rgb(223, 185, 154);
+ 
+   
 }
 .clearance{
    border: 2px solid pink; 
