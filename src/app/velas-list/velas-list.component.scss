@@ -16,7 +16,22 @@ th {
 }
 .clearance{
    border: 2px solid pink; 
-    color: violet;
+  background-color: pink;
 }
+.btn-custom {
+    background-color: #c78a5e; /* Marrón */
+    border: 1px solid #8B4513;
+    color: white;
+    padding: 5px 10px; /* Ajusta el padding para cambiar el tamaño */
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+    border-radius: 5px; /* Ajusta el borde */
+  }
+
+  .btn-custom:hover {
+    // border-color: #FF69B4; /* Rosa */
+    // color: #FF69B4; /* Cambia el color del texto al pasar el mouse si lo deseas */
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgb(235, 178, 141);
+  }
 
 

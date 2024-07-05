@@ -1,5 +1,6 @@
-<h1>Lista de velas</h1>
-<table class="table">
+
+          <h1>Lista de velas</h1>
+          <table class="table">
     <thead>
         <tr>
             <th>Imagen</th>
@@ -7,6 +8,7 @@
             <th>Material</th>
             <th>Precio</th>
             <th>Stock</th>
+            <th>Cantidad</th>
             <th>Compra</th>
         </tr>
     </thead>
@@ -23,9 +25,11 @@
                <td><span class="badge text-bg-danger">SIN STOCK</span></td>
              }
              <td>
-            <app-input-number  [(quantity)]="velas.quantity"[max]="velas.stock" *ngIf="velas.stock" ></app-input-number>
-            <button class="btn btn-dark" (click)="addToCart(velas)" [disabled]="velas.stock <= 0">Agregar al carrito</button>
-            </td>
+            <app-input-number  [(quantity)]="velas.quantity"[max]="velas.stock" *ngIf="velas.stock" ></app-input-number>   </td>
+            <td>
+            <button class="btn btn-custom" (click)="addToCart(velas)" [disabled]="velas.stock <= 0">Agregar al carrito</button></td>
+
+         
            </tr>
          } @empty {
            <tr>

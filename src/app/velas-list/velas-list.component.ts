@@ -20,7 +20,7 @@ export class VelasListComponent {
     this.subscription = this.velasDataService.getAll()
   .subscribe(velas  => this.velas = velas );
   }
-  
+
   ngOnDestroy(): void {
     if (this.subscription) {
       this.subscription.unsubscribe();
@@ -57,6 +57,10 @@ export class VelasListComponent {
 }
 ]
  addToCart (velas: any): void {
+  if(velas.quantity ==0){
+
+  }
+  else
   this.cart.addToCart(velas);
   velas.stock -= velas.quantity;
   velas.quantity =0;
