@@ -1,3 +1,18 @@
 input{
-    max-width: 30px;
+    max-width: 60px;
 }
+
+.btn-custom {
+    background-color: #c78a5e; 
+    border: 1px solid #8B4513;
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 5px;
+  }
+
+  .btn-custom:hover {
+    // border-color: #FF69B4; /* Rosa */
+    // color: #FF69B4; /* Cambia el color del texto al pasar el mouse si lo deseas */
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgb(235, 178, 141);
+  }
