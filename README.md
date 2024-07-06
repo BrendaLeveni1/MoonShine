@@ -1,27 +1,36 @@
-# MoonShine
+MoonShine
+Autor: Leveni Brenda Ivon
+DNI: 39925284
+Email: brendaleveni4@gmail.com
+Sede: Tres Arroyos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+El proyecto fue generado por Angular CLI versión 17.3.8.
 
-## Development server
+Descripción del Proyecto
+MoonShine es una plataforma de comercio electrónico dirigida a la venta de velas de soja. El sitio web permite a los usuarios explorar una variedad de velas, conocer sus beneficios y características, y realizar compras en línea.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Características
+Catálogo de Productos: Lista de velas con detalles como nombre, material, precio, stock y una imagen.
+Carrito de Compras: Permite a los usuarios visualizar las velas de su carrito de compras.
+Sistema de Stock: Controla y muestra la cantidad de stock disponible de cada producto.
+Formulario de Contacto: Permite a los usuarios ponerse en contacto con el equipo de MoonShine.
+Tecnologías Utilizadas
+Frontend: Angular
+Estilos: Bootstrap, CSS
+Otras Herramientas: Angular CLI, Observables para la gestión de datos
+Instalación y Configuración
+Para correr este proyecto localmente, sigue los siguientes pasos:
 
-## Code scaffolding
+Clona este repositorio:
+git clone <URL_del_repositorio>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Navega al directorio del proyecto:
+cd MoonShine
 
-## Build
+Instala las dependencias del proyecto:
+npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Corre el servidor de desarrollo:
+ng serve
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Abre tu navegador y navega a http://localhost:4200/.
