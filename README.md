@@ -17,7 +17,6 @@ Formulario de Contacto: Permite a los usuarios ponerse en contacto con el equipo
 Tecnologías Utilizadas
 Frontend: Angular
 Estilos: Bootstrap, CSS
-Backend: Por definir (si corresponde)
 Otras Herramientas: Angular CLI, Observables para la gestión de datos
 Instalación y Configuración
 Para correr este proyecto localmente, sigue los siguientes pasos:
